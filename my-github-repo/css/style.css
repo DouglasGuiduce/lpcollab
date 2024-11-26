@@ -1,4 +1,3 @@
-/* Estilos gerais para o contêiner principal */
 .container {
     font-family: 'Montserrat', sans-serif;
     background-color: #ffdede;
@@ -8,7 +7,6 @@
     justify-content: center;
     align-items: center;
     min-height: 35vh;
-    /* Altura mínima ajustada */
     padding: 20px 0;
     text-align: center;
 }
@@ -34,7 +32,6 @@ p {
     justify-items: center;
     width: 90%;
     max-width: 400x;
-    /* Aumenta a largura dos cards no desktop */
 }
 
 .clock-item {
@@ -45,7 +42,6 @@ p {
     width: 100%;
     max-width: 120px;
     min-height: 80px
-        /* Aumenta a largura dos cards no desktop */
 }
 
 .clock-item:hover {
@@ -72,28 +68,21 @@ p {
     text-align: center;
 }
 
-/* Estilização geral da imagem */
 .image-container {
     position: relative;
     width: 100%;
-    /* Adapta ao tamanho do contêiner pai */
     overflow: hidden;
-    /* Garante que o conteúdo não ultrapasse os limites */
 }
 
 .desktop-image {
     width: 100%;
-    /* A imagem ocupa toda a largura do contêiner */
     display: none;
-    /* Oculta por padrão para mobile */
 }
 
 .mobile-image {
     width: 100%;
-    /* A imagem ocupa toda a largura do contêiner */
 }
 
-/* Estilização do conteúdo sobre a imagem */
 .overlay-content {
     position: absolute;
     top: 50%;
@@ -105,15 +94,11 @@ p {
     text-align: center;
 }
 
-/* Estilização dos botões */
 .btn {
     display: inline-block;
     padding: 27px 40px;
-    /* Aumentar o tamanho do botão no desktop */
     background-color: #f5d301;
-    /* Cor do botão */
     color: #000;
-    /* Cor do texto do botão */
     text-decoration: none;
     font-weight: bolder;
     font-size: 20pt;
@@ -122,32 +107,25 @@ p {
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
-
 }
 
-/* Estilo para desktop */
 @media (min-width: 768px) {
     .desktop-image {
         display: block;
-        /* Mostra a imagem para desktop */
     }
 
     .mobile-image {
         display: none;
-        /* Oculta a imagem para mobile */
     }
 
     .btn {
         background-color: #f5d301;
         margin-top: 500px;
         margin-left: 400px;
-        /* Cor de fundo do botão para desktop */
     }
 
     .btn:hover {
         background-color: #ffb1b1;
-        /* Cor de fundo ao passar o mouse para desktop */
     }
 }
 
@@ -155,76 +133,54 @@ p {
 @media (max-width: 767px) {
     .desktop-image {
         display: none;
-        /* Oculta a imagem para desktop */
     }
 
     .mobile-image {
         display: block;
-        /* Mostra a imagem para mobile */
     }
 
     .btn {
         display: inline-block;
         padding: 17px 40px;
         background-color: #f5d301;
-        /* Cor de fundo do botão */
         font-size: 16px;
-        /* Tamanho da fonte */
         margin-top: 270px;
-        /* Desce o botão 100 pixels */
         white-space: nowrap;
-        /* Garante que o texto fique em uma linha */
     }
-
 
     .btn:hover {
         background-color: #ffb1b1;
-        /* Cor de fundo ao passar o mouse para mobile */
     }
 }
 
-/* Estilização geral da imagem */
 .image-container2 {
     position: relative;
     width: 100%;
-    /* Adapta ao tamanho do contêiner pai */
     overflow: hidden;
-    /* Garante que o conteúdo não ultrapasse os limites */
 }
 
 .desktop-image2 {
     width: 100%;
-    /* A imagem ocupa toda a largura do contêiner */
     display: none;
-    /* Oculta por padrão para mobile */
 }
 
 .mobile-image2 {
     width: 100%;
-    /* A imagem ocupa toda a largura do contêiner */
 }
 
-/* Estilização do conteúdo sobre a imagem */
 .overlay-content2 {
     position: absolute;
     top: 50%;
-    /* Centraliza verticalmente */
     left: 50%;
-    /* Centraliza horizontalmente */
     transform: translate(-50%, -50%);
-    /* Ajusta a posição */
     text-align: center;
 }
 
-/* Estilização dos botões */
 .btn2 {
     display: inline-block;
     padding: 27px 40px;
-    /* Aumentar o tamanho do botão no desktop */
     background-color: #ffff00;
-    /* Cor do botão */
     color: #000;
-    /* Cor do texto do botão */
     text-decoration: none;
     font-weight: bolder;
     font-size: 20pt;
@@ -235,16 +191,13 @@ p {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Estilo para desktop */
 @media (min-width: 768px) {
     .desktop-image2 {
         display: block;
-        /* Mostra a imagem para desktop */
     }
 
     .mobile-image2 {
         display: none;
-        /* Oculta a imagem para mobile */
     }
 
     .btn2 {
@@ -256,7 +209,6 @@ p {
 
     .btn2:hover {
         background-color: #ffb1b1;
-        /* Cor de fundo ao passar o mouse para desktop */
     }
 }
 
@@ -264,30 +216,23 @@ p {
 @media (max-width: 767px) {
     .desktop-image2 {
         display: none;
-        /* Oculta a imagem para desktop */
     }
 
     .mobile-image2 {
         display: block;
-        /* Mostra a imagem para mobile */
     }
 
     .btn2 {
         display: inline-block;
         padding: 17px 40px;
         background-color: #f5d301;
-        /* Cor de fundo do botão */
         font-size: 16px;
-        /* Tamanho da fonte */
         margin-top: 350px;
-        /* Desce o botão 100 pixels */
         white-space: nowrap;
-        /* Garante que o texto fique em uma linha */
     }
 
     .btn2:hover {
         background-color: #ffb1b1;
-        /* Cor de fundo ao passar o mouse para mobile */
     }
 }
 
@@ -295,41 +240,29 @@ p {
     position: relative;
     width: 100%;
     height: 100px;
-    /* Ajuste a altura conforme necessário */
     overflow: hidden;
 }
 
 .footer-background {
     background-image: url('../img/faixa2.png');
-    /* Substitua pelo caminho da sua imagem de fundo */
     background-size: cover;
-    /* Cobre todo o footer */
     background-position: center;
-    /* Centraliza a imagem */
     height: 100%;
-    /* Preenche a altura do footer */
     display: flex;
     justify-content: center;
-    /* Centraliza horizontalmente */
     align-items: center;
-    /* Centraliza verticalmente */
 }
 
 .icon {
     margin: 0 10px;
-    /* Espaçamento entre os ícones */
 }
 
 .icon img {
     width: 40px;
-    /* Tamanho do ícone */
     height: auto;
-    /* Mantém a proporção da imagem */
     transition: transform 0.3s;
-    /* Efeito de transição ao passar o mouse */
 }
 
 .icon:hover img {
     transform: scale(1.1);
-    /* Aumenta o ícone ao passar o mouse */
 }
